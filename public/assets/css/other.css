@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #102159;
+    padding: 10px 0;
+  }
+  
+  ul.menu {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  ul.menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  ul.menu li a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold; 
+    transition: color 0.3s; 
+  }
+  
+  ul.menu li a:hover {
+    color: #e1e720; 
+  }
+  
+  .introduction {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333;
+    padding: 0 20px; 
+  }
+  
+  .panel {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+  }
+  
+  .panel h2 {
+    margin-bottom: 10px;
+  }
+  
+  .panel img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 150px; 
+    width: auto; 
+    border-radius: 10px;
+  }
+  
+  .panel p {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el footer */
+  #Pie {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #102159;
+    padding: 10px 0;
+  }
+  
+  .container .SocialMedia img {
+    width: 20px;
+    margin: 0 5px;
+  }
+  
+  .container h4 {
+    margin-top: 10px;
+    color: white;
+  }
+
+
+
+/* Estilo para el contenido de música */
+.music-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.album-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  max-width: calc(33.33% - 40px);
+}
+
+.album-category {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.album-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
+  width: 130%;
+}
+
+.description,
+.tracklist {
+  text-align: left;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  flex-basis: 300px;
+  margin-left: 10px;
+  min-height: 190px;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.cover-container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin-right: 20px;
+  width: 200px; 
+  height: 200px; 
+  border-radius: 10px;
+}
+
+.cover-image {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.music-content2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-between;
+  padding: 40px 20px; /* Añadido más espacio en la cabecera y el pie */
+}
+
+.video-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar los elementos horizontalmente */
+  gap: 20px; 
+  width: calc(50% - 10px); 
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.video-container h2 {
+  font-size: 16px; /* Reducido el tamaño de la fuente */
+  margin: 5px 0; /* Reducido el margen */
+  text-align: center; 
+}
+
+

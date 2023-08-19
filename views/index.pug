@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title NewJeans - Bienvenidos al Mundo de NewJeans
+    link(href="/assets/css/styles.css", rel="stylesheet")
+  body
+    header
+      img(src="/assets/img/head.png", alt="Cabeza de la página")
+
+    section#buttons
+      .container
+        a.button-login(href="/inicio") Inicio de Sesión
+        a.button-register(href="/registro") Registro
+
+    section#slider
+      .container
+        .slider
+          .slider-container
+            each index in [1, 2, 3, 4, 5, 6, 7] 
+              .slide
+                img(src=`/assets/img/slider/sl${index}.jpg`, alt=`Slide ${index}`)
+
+    section#content
+      .container
+        .panel-intro-container
+          .panel
+            a.panel-link(href="/members") Miembros
+            a.panel-link(href="/music") Discografía
+            a.panel-link(href="/mvs") MVs
+
+          .introduction
+            h4 ¡Bienvenidos al Mundo Bunnie!
+            p
+              | 
+              br
+              | Sumérgete en el emocionante universo de NewJeans, un grupo femenino surcoreano que ha revolucionado la escena musical. Conformado por Minji, Hanni, Danielle, Haerin y Hyein, NewJeans combina la frescura del pop y R&B con toques nostálgicos de los años 90. Desde su debut en 2022 bajo ADOR, su música y estilo únicos han dejado huella. Descubre más sobre su increíble trayectoria y sus integrantes e imagen única. ¡Únete a la experiencia NewJeans!
+
+        .blocks
+          .block
+            img(src="/assets/img/slider/sl1.jpg", alt="Miembros")
+            p Miembros
+
+          .block
+            img(src="/assets/img/slider/sl6.jpg", alt="Música")
+            p Discografía
+
+          .block
+            img(src="/assets/img/slider/sl7.jpg", alt="MVs")
+            p MVs
+
+    footer(id="Pie")
+      .container
+        .SocialMedia
+          img(src="/assets/img/icons/instagram.png", alt="instagram")
+          img(src="/assets/img/icons/google.png", alt="google")
+          img(src="/assets/img/icons/facebook.png", alt="facebook")
+          img(src="/assets/img/icons/twitter.png", alt="twitter")
+        h4 ITLA | Desarrollo de Software
+
+  script(src="/assets/js/slider.js") 

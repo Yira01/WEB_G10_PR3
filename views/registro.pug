@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Registro
+        script(src="/assets/js/jquery-3.7.0.min.js")
+        script(src="/assets/js/registro.js") 
+        link(href="/assets/css/styles2.css", rel="stylesheet")
+    body
+        .page-container
+            nav
+                ul.menu
+                    li: a(href="/") Inicio
+                    li: a(href="members") Miembros
+                    li: a(href="music") Discografía
+                    li: a(href="mvs") MVs 
+
+            main
+                h1 Formulario de Registro
+                form#registroForm
+                    label(for="nombre") Nombre:
+                    input(type="text", id="nombre", name="nombre", required)
+
+                    label(for="fechaNacimiento") Fecha de Nacimiento:
+                    input(type="date", id="fechaNacimiento", name="fechaNacimiento", required)
+
+                    label(for="correo") Correo electrónico:
+                    input(type="email", id="correo", name="correo", required)
+
+                    label(for="contrasena") Contraseña:
+                    input(type="password", id="contrasena", name="contrasena", required)
+
+                    label(for="confirmarContrasena") Confirmar contraseña:
+                    input(type="password", id="confirmarContrasena", name="confirmarContrasena", required)
+
+                    label(for="genero") Género:
+                    select(id="genero", name="genero", required)
+                        option(value="") Seleccione
+                        option(value="masculino") Masculino
+                        option(value="femenino") Femenino
+                        option(value="otro") Otro
+
+                    button(type="submit") Registrarse
+                a(href="/Inicio", class="link-inicio") Iniciar sesion
+
+            footer(id="Pie")
+                .SocialMedia
+                    img(src="/assets/img/icons/instagram.png", alt="instagram")
+                    img(src="/assets/img/icons/google.png", alt="google")
+                    img(src="/assets/img/icons/facebook.png", alt="facebook")
+                    img(src="/assets/img/icons/twitter.png", alt="twitter")
+                h4 ITLA | Desarrollo de Software

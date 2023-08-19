@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1E720;
+  }
+  
+  .page-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+  }
+  
+  nav {
+    background-color: #102159;
+    padding: 10px;
+  }
+  
+  nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul.menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul.menu li a {
+    text-decoration: none;
+    color: #E1E720;
+  }
+  
+  main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="date"],
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #102159;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #383E7E;
+  }
+  
+.link-inicio {
+  display: block; 
+  text-align: center; 
+  margin-top: 10px; 
+  font-size: 16px; 
+  color: #333; 
+}
+
+  /* Estilos para mostrar errores de validación */
+  form input:invalid,
+  form select:invalid {
+    border-color: #E1E720;
+  }
+  
+  form input:invalid + span,
+  form select:invalid + span {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #102159;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: auto; 
+  }
+  
+  .SocialMedia img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
