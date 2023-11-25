@@ -22,6 +22,10 @@ app.get('/MVs', (req, res) => {
     res.render('mvs');
 });
 
+app.get('/Shows', (req, res) => {
+    res.render('liveshow');
+});
+
 app.get('/Inicio', (req, res) => {
     res.render('inicio');
 });
